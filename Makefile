@@ -50,6 +50,8 @@ else
 	SRC_COMPS += src/comps/encs.c
 	SRC_COMPS += src/comps/encf.c
 	SRC_COMPS += src/comps/endat.c
+	SRC_COMPS += src/comps/siserial.c
+	SRC_COMPS += src/comps/smart_torque.c
 	CFLAGS += -DV4
 endif
 
