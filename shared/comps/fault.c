@@ -195,9 +195,9 @@ static void rt_func(float period, void *ctx_ptr, hal_pin_inst_t *pin_ptr) {
   }
 
   if(err_filter(&(ctx->dc_volt_error), 5.0, 0.001, PIN(dc_volt) > PIN(max_dc_volt) || PIN(dc_volt) < PIN(min_dc_volt))) {
-    ctx->fault      = HV_VOLT_ERROR;
-    PIN(last_fault) = ctx->fault;
-    ctx->state      = SOFT_FAULT;
+    // ctx->fault      = HV_VOLT_ERROR;
+    // PIN(last_fault) = ctx->fault;
+    // ctx->state      = SOFT_FAULT;
   }
 
   if(err_filter(&(ctx->mot_temp_error), 5.0, 0.001, PIN(mot_temp) > PIN(max_mot_temp))) {

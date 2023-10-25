@@ -348,7 +348,7 @@ static void rt_func(float period, void *ctx_ptr, hal_pin_inst_t *pin_ptr) {
     }
   }
 
-  if(ctx->timeout > 2) {
+  if(ctx->timeout > 2000) {
     PIN(fault) = HV_TIMEOUT_ERROR;
   }
   ctx->timeout++;
